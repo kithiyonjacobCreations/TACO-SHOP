@@ -1,0 +1,35 @@
+.form {
+  background-color: rgb(79, 50, 106);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+form input {
+  display: block;
+  color: rgb(101, 74, 125);
+  align-items: center;
+  width: 300px;
+  height: auto;
+  padding: 0.5rem;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0.5rem;
+  font-size: medium;
+  font-weight: 500;
+}
+form .form_btn {
+  background-color: rgb(155, 155, 155);
+  font-weight: 900;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 1px black;
+}
+form input:hover,
+form input:focus {
+  background-color: rgb(154, 154, 154);
+  color: white;
+}
+
+

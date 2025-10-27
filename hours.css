@@ -1,0 +1,36 @@
+table,
+th,
+tr,
+caption,
+td {
+  border: 4px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+.table {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+table,
+caption {
+  width: 80%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #763d89;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px black;
+}
+caption {
+  width: 100%;
+  text-transform: uppercase;
+  border-bottom: 0px;
+}
+tr,
+td,
+th {
+  padding: 0.5rem;
+}
+th {
+  text-transform: uppercase;
+}

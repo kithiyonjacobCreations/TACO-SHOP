@@ -1,0 +1,125 @@
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+/* RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*General*/
+:root {
+  --BG_C1: rgb(33, 33, 33);
+  --HEADER_BG: #171717;
+  --HEADER_TXT: white;
+  --PADDING_S: 1rem;
+  --PADDING_SL: 1.5rem;
+  --TXT_C1: #785097;
+  --TXT_C2: black;
+}
+html {
+  font-family: "Oswald", sans-serif;
+  font-size: min(1.5rem, 3vw);
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  min-width: 100vh;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  color: var(--TXT_C2);
+}
+/* header */
+header {
+  display: grid;
+  grid-column: 2/10;
+  padding: var(--PADDING_S);
+  background-color: var(--HEADER_BG);
+  color: var(--HEADER_TXT);
+  text-align: center;
+}
+/* NAV */
+nav h1 {
+  padding: var(--PADDING_S);
+  color: var(--TXT_C1);
+  border-radius: 50%;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px white;
+}
+nav {
+  display: grid;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: #171717;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  color: var(--HEADER_TXT);
+}
+nav ul li {
+  display: flex;
+  font-size: 0.7rem;
+  border: 1px solid var(--HEADER_TXT);
+}
+
+nav ul li a:any-link {
+  color: var(--HEADER_TXT);
+  text-decoration: none;
+  background: linear-gradient(to right, rgb(88, 88, 88) 50%, #333333 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.5s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-position: left;
+}
+
+nav ul li {
+  margin: 0.1rem 0;
+  transform: skewY(-20deg);
+  border-color: rgb(78, 78, 78);
+}
+nav ul li a {
+  font-weight: 900;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgb(78, 78, 78);
+  display: grid;
+  place-content: center;
+  width: 100%;
+  padding: var(--PADDING_S) 0.5rem;
+  box-shadow: 1px 1px 1px 0 black;
+}
+main {
+  display: grid;
+  grid-column: 2/10;
+  grid-row: 2;
+  padding: var(--PADDING_S);
+}
+footer {
+  display: grid;
+  grid-column: 2/10;
+  grid-row: 3;
+  background-color: #171717;
+  font-size: 0.5rem;
+  color: rgb(143, 143, 143);
+  padding: var(--PADDING_S);
+  place-content: center;
+}
+/* BANNER IMG */
+.banner {
+  margin: -24px;
+  display: grid;
+  height: 100vh;
+}
+.banner .banner__img {
+  width: 100%;
+  height: 90%;
+}
+
